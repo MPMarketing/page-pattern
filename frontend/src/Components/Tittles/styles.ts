@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Tittle1 = styled.h2`
-    font-size: 14vw;
-    color: red;
+    font-size: 2.5vw;
+    color: black;
     background-color: none;
 `;
 
