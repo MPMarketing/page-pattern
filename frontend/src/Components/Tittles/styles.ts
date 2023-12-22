@@ -1,30 +1,30 @@
 import styled from "styled-components";
 
-export const Tittle1 = styled.h2`
+export const Tittle1 = styled.h1`
     font-size: 2.5vw;
     color: black;
     background-color: none;
 `;
 
-export const Tittle2 = styled.h2`
+export const Tittle2 = styled.h1`
     font-size: 0;
     color: black;
     background-color: none;
 `;
 
-export const Tittle3 = styled.h2`
+export const Tittle3 = styled.h1`
     font-size: 0;
     color: black;
     background-color: none;
 `;
 
-export const Tittle4 = styled.h2`
+export const Tittle4 = styled.h1`
     font-size: 0;
     color: black;
     background-color: none;
 `;
 
-export const Tittle5 = styled.h2`
+export const Tittle5 = styled.h1`
     font-size: 0;
     color: black;
     background-color: none;

@@ -1,30 +1,22 @@
-import { Navbar1 } from "../Components/Navbars/styles";
-import { WrapperA, WrapperB } from "../Components/Wrappers/style";
-import GlobalStyle from "../Components/Layouts/globalStyle";
-import { Tittle1 } from "../Components/Tittles/styles";
-import { VideoWrap1 } from "../Components/Vídeo Wrappers/styles";
+import TrueFooter from "../Components/Footers";
+import { ImageWrap1 } from "../Components/Image Wrappers/styles";
+import Header from "../Components/NavHead";
+import GlobalStyle from "../Components/Styles/globalStyle";
+import { Text1 } from "../Components/Texts/styles";
+import Vturb from "../Components/Vturb";
+import { WrapperB } from "../Components/Wrappers/style";
 
 const Home = () => {
   return (
     <>
       <GlobalStyle/>
-      <WrapperA>
-        <Navbar1>
-          <WrapperB>
-            DO NOT CLOSE OR REFRESH THIS PAGE OR THERE MAY BE AN ERROR IN YOUR PURCHASE
-          </WrapperB>
-        </Navbar1>
-
-        <Tittle1>
-          <WrapperB>
-            PLEASE LISTEN CAREFULLY THIS MESSAGE FROM JAMES MILLER
-          </WrapperB>
-        </Tittle1>
-
-        <VideoWrap1>
-          <iframe title="teste" width="420" height="315" src="https://www.youtube.com/watch?v=LrWrfLFm9gg"></iframe>
-        </VideoWrap1>
-      </WrapperA>
+      <Header/>
+      <WrapperB>
+        <Vturb/>
+        <Text1 style={{padding: '0.5rem'}}><span style={{color: 'red', fontWeight: 'bold'}}>IMPORTANT:</span> Your video may take up to 10 seconds to load. Make sure your sound is on.</Text1>
+        <ImageWrap1 src="../../assets/james-miller.svg" alt="jamer-miller-signature"/>
+      </WrapperB>
+      <TrueFooter/>
     </>
     
   );

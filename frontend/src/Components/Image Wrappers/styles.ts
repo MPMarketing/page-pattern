@@ -1,52 +1,22 @@
 import styled from "styled-components";
 
-export const ImageWrap1 = styled.div`
+export const ImageWrap1 = styled.img`
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
-    border: none;
+    width: 50%;
+
+    @media screen and (max-width: 768px){
+        width: 100%;
+    }
 `;
 
-export const ImageWrap2 = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    border: none;
-`;
+export const LogoWrapper = styled.img`
+    width: 25%;
+    margin: 1rem 0;
 
-export const ImageWrap3 = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    border: none;
-`;
-
-export const ImageWrap4 = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    border: none;
-`;
-
-export const ImageWrap5 = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    border: none;
-`;
-
-export const ImageWrap6 = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    border: none;
-`;
+    @media screen and (max-width: 768px){
+        width: 40%;
+    }
+`
