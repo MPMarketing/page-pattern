@@ -6,6 +6,7 @@ export const ImageWrap1 = styled.img`
     justify-content: center;
     align-items: center;
     width: 50%;
+    height: auto;
 
     @media screen and (max-width: 768px){
         width: 100%;
@@ -13,6 +14,7 @@ export const ImageWrap1 = styled.img`
 `;
 
 export const LogoWrapper = styled.img`
+    height: auto;
     width: 25%;
     margin: 1rem 0;
 

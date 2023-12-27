@@ -11,8 +11,8 @@ const Home = () => {
     <>
       <GlobalStyle/>
       <Header/>
+      <Vturb/>
       <WrapperB>
-        <Vturb/>
         <Text1 style={{padding: '0.5rem'}}><span style={{color: 'red', fontWeight: 'bold'}}>IMPORTANT:</span> Your video may take up to 10 seconds to load. Make sure your sound is on.</Text1>
         <ImageWrap1 src="../../assets/james-miller.svg" alt="jamer-miller-signature"/>
       </WrapperB>
