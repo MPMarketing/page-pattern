@@ -4,7 +4,6 @@ const Privacy = () => {
     return(
         <>
             <WrapperE>
-                <img src="../../public/assets/og-image.jpeg" alt="og-image" />
                 <h1>Night Trick privacy policy</h1>
                 <p>All of your personal information collected will be used to help make your visit to our site as productive and enjoyable as possible.
                     <br/><br/>
