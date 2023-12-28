@@ -15,10 +15,10 @@ export const ImageWrap1 = styled.img`
 
 export const LogoWrapper = styled.img`
     height: auto;
-    width: 25%;
+    width: 250px;
     margin: 1rem 0;
 
     @media screen and (max-width: 768px){
-        width: 40%;
+        width: 150px;
     }
 `

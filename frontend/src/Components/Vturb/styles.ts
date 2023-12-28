@@ -7,7 +7,12 @@ export const Diveturb = styled.div`
     width: 60%;
     overflow-x: hidden;
 
-    @media screen and (max-width: 768px){
+    div img {
         width: 100%;
+        height: auto;
+    }
+
+    @media screen and (max-width: 768px){
+        width: 100vw;
     }
 `
