@@ -2,3 +2,9 @@ Sitemap: https://thenighttimeprotocol.com/sitemap.xml
 
 User-agent: *
 Allow: /
+
+User-agent: *
+Disallow: /privacy
+
+User-agent: *
+Disallow: /terms-of-use
