@@ -1,3 +1,4 @@
+import ConsentBanner from "../Components/Cookies Consent";
 import TrueFooter from "../Components/Footers";
 import { ImageWrap1 } from "../Components/Image Wrappers/styles";
 import Header from "../Components/NavHead";
@@ -17,6 +18,7 @@ const Home = () => {
         <ImageWrap1 src="../../assets/james-miller.webp" alt="jamer-miller-signature"/>
       </WrapperB>
       <TrueFooter/>
+      {/* <ConsentBanner/> */}
     </>
     
   );
