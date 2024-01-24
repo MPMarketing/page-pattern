@@ -47,6 +47,9 @@
       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','GTM-PRR8BHW5');
     </script>
+    <script>
+      !function(){"use strict";function l(e){for(var t=e,r=0,n=document.cookie.split(";");r<n.length;r++){var o=n[r].split("=");if(o[0].trim()===t)return o[1]}}function s(e){return localStorage.getItem(e)}function u(e){return window[e]}function d(e,t){e=document.querySelector(e);return t?null==e?void 0:e.getAttribute(t):null==e?void 0:e.textContent}var e=window,t=document,r="script",n="dataLayer",o="GTM-PRR8BHW5",a="https://gtm.thenighttimeprotocol.com",i="https://load.gtm.thenighttimeprotocol.com",c="iidmxxjl",E="cookie",I="fbp",v="",g=!1;try{var g=!!E&&(m=navigator.userAgent,!!(m=new RegExp("Version/([0-9._]+)(.*Mobile)?.*Safari.*").exec(m)))&&16.4<=parseFloat(m[1]),A="stapeUserId"===E,f=g&&!A?function(e,t,r){void 0===t&&(t="");var n={cookie:l,localStorage:s,jsVariable:u,cssSelector:d},t=Array.isArray(t)?t:[t];if(e&&n[e])for(var o=n[e],a=0,i=t;a<i.length;a++){var c=i[a],c=r?o(c,r):o(c);if(c)return c}else console.warn("invalid uid source",e)}(E,I,v):void 0;g=g&&(!!f||A)}catch(e){console.error(e)}var m=e,E=(m[n]=m[n]||[],m[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"}),t.getElementsByTagName(r)[0]),I="dataLayer"===n?"":"&l="+n,v=f?"&bi="+encodeURIComponent(f):"",A=t.createElement(r),e=g?"kp"+c:c,n=!g&&i?i:a;A.async=!0,A.src=n+"/"+e+".js?id="+o+I+v,null!=(f=E.parentNode)&&f.insertBefore(A,E)}();
+    </script>
     <!-- End Google Tag Manager -->
     <!-- Facebook Verify Dom -->
     <meta name="facebook-domain-verification" content="eubn0z4ok9bsbuyo3ubkmi6zxtodjs" />
@@ -57,7 +60,17 @@
       <iframe src="https://load.gtm.thenighttimeprotocol.com/ns.html?id=GTM-PRR8BHW5" height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
   <!-- End Google Tag Manager (noscript) -->
-    <div id="root"></div>  
-
+    <div id="root"></div>
+    <script>
+      window.addEventListener('beforeunload', function (event) {
+        // Cancela o evento de fechamento padrão
+        event.preventDefault();
+        
+        // Exibe uma mensagem de confirmação personalizada
+        var confirmationMessage = 'Deseja realmente sair?';
+        event.returnValue = confirmationMessage;
+        return confirmationMessage;
+      });
+    </script>
   </body>
 </html>

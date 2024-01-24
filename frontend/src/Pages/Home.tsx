@@ -7,6 +7,7 @@ import Vturb from "../Components/Vturb";
 import { WrapperB } from "../Components/Wrappers/style";
 
 const Home = () => {
+
   return (
     <>
       <GlobalStyle/>
