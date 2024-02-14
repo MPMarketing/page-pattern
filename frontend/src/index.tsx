@@ -5,6 +5,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Terms from './Pages/Terms';
 import Privacy from './Pages/Privacy';
 import YouHome from './Pages/YouHome';
+import Quizz from './Pages/Quizz';
+import HomeQuizz from './Pages/HomeQuizz';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -16,9 +18,11 @@ root.render(
         <Route path='/' element={<Home/>}>
           <Route index element={<Home/>}/>
         </Route>
+        <Route path='/quizz-complete' element={<HomeQuizz/>}/>
         <Route path='/free-presentation' element={<YouHome/>}/>
         <Route path='/terms-of-use' element={<Terms/>}/>
         <Route path='/privacy' element={<Privacy/>}/>
+        <Route path='/quizz' element={<Quizz/>}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
