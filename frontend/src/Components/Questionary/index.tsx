@@ -81,7 +81,7 @@ const Quiz: React.FC = () => {
       <ul style={{display: 'flex', marginTop: '2rem', gap: '1rem', flexDirection: 'column'}}>
         {questions[currentQuestion].options.map((option, index) => (
           <li key={index} style={{listStyle: 'none'}}>
-            <button onClick={() => handleAnswerClick(option)} disabled={selectedAnswer !== null} style={{padding: '1rem', borderRadius: '30px', backgroundColor: 'orange', fontWeight: '700'}}>
+            <button type='button' onClick={() => handleAnswerClick(option)} disabled={selectedAnswer !== null} style={{padding: '1rem', borderRadius: '30px', backgroundColor: 'orange', fontWeight: '700'}}>
               {option}
             </button>
           </li>
