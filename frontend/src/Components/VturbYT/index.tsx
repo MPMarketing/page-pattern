@@ -6,6 +6,7 @@ const VturbYT = () => {
         <Diveturb>
           <div id="vid_65ce2d9ac157b20007785568" style={{ position: 'relative', width: '100%', padding: '56.25% 0 0' }}>
             <img
+              alt='vturb-yt'
               id="thumb_65ce2d9ac157b20007785568"
               src="https://images.converteai.net/4fc732ef-52cc-458d-82c3-f067ec86c320/players/65ce2d9ac157b20007785568/thumbnail.jpg"
               style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
