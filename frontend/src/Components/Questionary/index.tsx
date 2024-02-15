@@ -101,7 +101,7 @@ const Quiz: React.FC = () => {
        )}
 
       {currentQuestion < questions.length - 1 && (
-        <button type='button' onClick={handleNextQuestion} disabled={selectedAnswer === null} style={{marginTop: '3rem', backgroundColor: 'white', borderRadius: '30px', padding: '1rem', fontWeight: '700'}}>
+        <button type='button' onClick={handleNextQuestion} disabled={selectedAnswer === null} style={{marginTop: '3rem', backgroundColor: 'white', borderRadius: '30px', border: '1px solid black',padding: '1rem', fontWeight: '700'}}>
           Next Question
         </button>
       )}
