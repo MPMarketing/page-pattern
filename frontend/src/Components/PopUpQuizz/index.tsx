@@ -1,19 +1,19 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { PopUp } from "./styles";
 
 const PopUpQuizz = () => {
 
-    const [popupVisible, setPopupVisible] = useState(true);
+    // const [popupVisible, setPopupVisible] = useState(true);
 
     const closePopup = () => {
         window.location.href = 'https://thenighttimeprotocol.com/quizz-completed';
-        setPopupVisible(false);
+        // setPopupVisible(false);
     };
 
     return(
     
         <>
-        {popupVisible && (
+        
              <PopUp>
                 <h4>
                     Congratulations!<br/><br/>
@@ -25,7 +25,7 @@ const PopUpQuizz = () => {
                     Reveal this secret now!
                 </button>
             </PopUp>
-        )}
+        
         </>
     )
 };
