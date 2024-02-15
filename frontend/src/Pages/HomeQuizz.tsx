@@ -12,8 +12,8 @@ const HomeQuizz = () => {
   return (
     <>
       <GlobalStyle/>
-      <Header/>
       <PopUpQuizz/>
+      <Header/>
       <Vturb/>
       <WrapperB>
         <Text1 style={{padding: '0.5rem'}}><span style={{color: 'red', fontWeight: 'bold'}}>IMPORTANT:</span> Your video may take up to 10 seconds to load. Make sure your sound is on.</Text1>
