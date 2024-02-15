@@ -81,7 +81,7 @@ const Quiz: React.FC = () => {
       <ul style={{display: 'flex', marginTop: '2rem', gap: '1rem', flexDirection: 'column'}}>
         {questions[currentQuestion].options.map((option, index) => (
           <li key={index} style={{listStyle: 'none'}}>
-            <button onClick={() => handleAnswerClick(option)} disabled={selectedAnswer !== null} style={{padding: '1rem', borderRadius: '30px', backgroundColor: '#54C5BB', fontWeight: '700'}}>
+            <button type='button' onClick={() => handleAnswerClick(option)} disabled={selectedAnswer !== null} style={{padding: '1rem', borderRadius: '30px', backgroundColor: '#54C5BB', fontWeight: '700'}}>
               {option}
             </button>
           </li>
@@ -101,13 +101,13 @@ const Quiz: React.FC = () => {
        )}
 
       {currentQuestion < questions.length - 1 && (
-        <button onClick={handleNextQuestion} disabled={selectedAnswer === null} style={{marginTop: '3rem', backgroundColor: 'green', borderRadius: '30px', padding: '1rem', fontWeight: '700'}}>
+        <button type='button' onClick={handleNextQuestion} disabled={selectedAnswer === null} style={{marginTop: '3rem', backgroundColor: 'green', borderRadius: '30px', padding: '1rem', fontWeight: '700'}}>
           Next Question
         </button>
       )}
 
       {showCompletionButton && (
-        <button onClick={handleCompleteQuiz} style={{backgroundColor: 'red', padding: '1rem', textAlign: 'center', fontWeight: '700', marginTop: '2rem', borderRadius: '30px', color: 'white'}}>
+        <button type='button' onClick={handleCompleteQuiz} style={{backgroundColor: 'red', padding: '1rem', textAlign: 'center', fontWeight: '700', marginTop: '2rem', borderRadius: '30px', color: 'white'}}>
           I want to be part of the program
         </button>
       )}
