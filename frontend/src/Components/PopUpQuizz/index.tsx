@@ -6,6 +6,7 @@ const PopUpQuizz = () => {
     const [popupVisible, setPopupVisible] = useState(true);
 
     const closePopup = () => {
+        window.location.href = 'https://thenighttimeprotocol.com/quizz-completed';
         setPopupVisible(false);
     };
 

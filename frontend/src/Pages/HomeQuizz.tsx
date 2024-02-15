@@ -1,7 +1,6 @@
 import TrueFooter from "../Components/Footers";
 import { ImageWrap1 } from "../Components/Image Wrappers/styles";
 import Header from "../Components/NavHead";
-import PopUpQuizz from "../Components/PopUpQuizz";
 import GlobalStyle from "../Components/Styles/globalStyle";
 import { Text1 } from "../Components/Texts/styles";
 import Vturb from "../Components/Vturb";
@@ -12,7 +11,6 @@ const HomeQuizz = () => {
   return (
     <>
       <GlobalStyle/>
-      <PopUpQuizz/>
       <Header/>
       <Vturb/>
       <WrapperB>
