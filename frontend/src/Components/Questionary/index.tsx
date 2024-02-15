@@ -30,7 +30,7 @@ const questions: Question[] = [
   {
     id: 5,
     text: 'Is your current diet healthy or do you eat everything?',
-    options: ['Yes, I will be careful', 'I prefer to do it later'],
+    options: ['Yes, I will be careful'],
   },
   // Adicione mais perguntas conforme necessário
 ];
@@ -81,7 +81,7 @@ const Quiz: React.FC = () => {
       <ul style={{display: 'flex', marginTop: '2rem', gap: '1rem', flexDirection: 'column'}}>
         {questions[currentQuestion].options.map((option, index) => (
           <li key={index} style={{listStyle: 'none'}}>
-            <button type='button' onClick={() => handleAnswerClick(option)} disabled={selectedAnswer !== null} style={{padding: '1rem', borderRadius: '30px', backgroundColor: '#54C5BB', fontWeight: '700', color: 'black'}}>
+            <button type='button' onClick={() => handleAnswerClick(option)} disabled={selectedAnswer !== null} style={{padding: '1rem', borderRadius: '30px', backgroundColor: '#54C5BB', fontWeight: '700'}}>
               {option}
             </button>
           </li>
@@ -101,7 +101,7 @@ const Quiz: React.FC = () => {
        )}
 
       {currentQuestion < questions.length - 1 && (
-        <button type='button' onClick={handleNextQuestion} disabled={selectedAnswer === null} style={{marginTop: '3rem', backgroundColor: 'green', borderRadius: '30px', padding: '1rem', fontWeight: '700', color: 'black'}}>
+        <button type='button' onClick={handleNextQuestion} disabled={selectedAnswer === null} style={{marginTop: '3rem', backgroundColor: 'green', borderRadius: '30px', padding: '1rem', fontWeight: '700'}}>
           Next Question
         </button>
       )}
