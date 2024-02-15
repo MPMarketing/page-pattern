@@ -19,7 +19,7 @@ const questions: Question[] = [
   },
   {
     id: 3,
-    text: 'How difficult is it for you to lose weight?',
+    text: 'How difficult it is for you to lose weight?',
     options: ['Easy', 'Medium', 'Hard', 'Extremely Hard'],
   },
   {
@@ -29,7 +29,7 @@ const questions: Question[] = [
   },
   {
     id: 5,
-    text: 'Is your current diet healthy or do you eat everything?',
+    text: 'Are you committed to carrying out this treatment carefully so as not to lose more weight than necessary?',
     options: ['Yes, I will be careful'],
   },
   // Adicione mais perguntas conforme necessário
